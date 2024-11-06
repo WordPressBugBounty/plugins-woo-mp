@@ -3,9 +3,9 @@
 Contributors: bfl
 Tags: backend, manual, phone, payment, woocommerce
 Requires at least: 4.7
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 2.8.3
+Stable tag: 2.8.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,12 +54,7 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 
 #### Stripe
 
-1. Follow these instructions to find your API keys:
-    * If you already use a Stripe payment gateway:
-        1. Go to **WooCommerce > Settings > Payments** (Formerly **Checkout**) **> Stripe**.
-        2. Here you can find your API keys.
-    * If you do not already use a Stripe payment gateway:
-        1. [Follow these instructions](https://stripe.com/docs/keys).
+1. Get your live API keys [here](https://dashboard.stripe.com/apikeys), or your test keys [here](https://dashboard.stripe.com/test/apikeys).
 2. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
 3. Select **Stripe** from the **Payment Gateway** drop-down and click **Save changes**.
 4. Go to **WooCommerce > Settings > Manual Payment > Stripe**.
@@ -69,13 +64,13 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 
 #### Authorize.net
 
-1. Follow these instructions to find your API keys:
+1. Follow these instructions to get your API keys:
     * If you already use an Authorize.net payment gateway:
-        1. Go to **WooCommerce > Settings > Payments** (Formerly **Checkout**) **> Authorize.net**.
+        1. Go to **WooCommerce > Settings > Payments > Authorize.net**.
         2. Here you can find your API keys.
     * If you do not already use an Authorize.net payment gateway:
-        1. [Follow these instructions](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key).
-2. Follow these instructions to find your **Public Client Key**:
+        1. [Follow these instructions](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001271#:~:text=Steps%20to%20Generate%20Your%20API%20ID%20and%20Transaction/Signature%20Key).
+2. Follow these instructions to get your **Public Client Key**:
     1. Click the links that apply to you:
         * For live accounts:
             1. Log in to the Authorize.net [Merchant Interface](https://account.authorize.net/).
@@ -94,9 +89,9 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 
 #### Eway
 
-1. Follow these instructions to find your API keys:
+1. Follow these instructions to get your API keys:
     * If you already use an Eway payment gateway:
-        1. Go to **WooCommerce > Settings > Payments** (Formerly **Checkout**) **> Eway**.
+        1. Go to **WooCommerce > Settings > Payments > Eway**.
         2. Here you can find your API keys.
     * If you do not already use an Eway payment gateway:
         1. [Follow these instructions](https://go.eway.io/s/article/How-do-I-setup-my-Live-eWAY-API-Key-and-Password).
@@ -118,6 +113,12 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 7. Edit Order Screen
 
 == Changelog ==
+
+= 2.8.5 =
+
+* Declare support for WordPress 6.7.
+* Update the Stripe API version.
+* Update the Eway SDK.
 
 = 2.8.4 =
 

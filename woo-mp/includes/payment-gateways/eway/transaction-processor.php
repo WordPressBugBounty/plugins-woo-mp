@@ -9,7 +9,7 @@ use Eway\Rapid\Contract\Client;
 defined( 'ABSPATH' ) || die;
 
 if ( ! class_exists( Rapid::class ) ) {
-    require WOO_MP_PATH . '/includes/payment-gateways/eway/libraries/eway-rapid-php-1.4.1/include_eway.php';
+    require WOO_MP_PATH . '/includes/payment-gateways/eway/libraries/eway-rapid-php-6a2a038/include_eway.php';
 }
 
 /**
@@ -79,7 +79,7 @@ class Transaction_Processor extends \Woo_MP\Payment_Gateway\Transaction_Processo
      * @return array Associative array with codes as keys and messages as values.
      */
     public static function get_response_code_messages() {
-        return parse_ini_file( WOO_MP_PATH . '/includes/payment-gateways/eway/libraries/eway-rapid-php-1.4.1/resource/lang/en.ini' );
+        return parse_ini_file( WOO_MP_PATH . '/includes/payment-gateways/eway/libraries/eway-rapid-php-6a2a038/resource/lang/en.ini' );
     }
 
 }
