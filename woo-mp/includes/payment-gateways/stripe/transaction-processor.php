@@ -28,7 +28,7 @@ class Transaction_Processor extends \Woo_MP\Payment_Gateway\Transaction_Processo
      */
     public function __construct() {
         $this->client = new Client( [
-            'api_version' => '2024-09-30.acacia',
+            'api_version' => '2025-03-31.basil',
             'secret_key'  => get_option( 'woo_mp_stripe_secret_key' ),
             'headers'     => $this->get_headers(),
         ] );

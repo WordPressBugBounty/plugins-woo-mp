@@ -3,9 +3,9 @@
 Contributors: bfl
 Tags: backend, manual, phone, payment, woocommerce
 Requires at least: 4.7
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 2.8.4
+Stable tag: 2.8.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,13 +54,14 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 
 #### Stripe
 
-1. Get your live API keys [here](https://dashboard.stripe.com/apikeys), or your test keys [here](https://dashboard.stripe.com/test/apikeys).
-2. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
-3. Select **Stripe** from the **Payment Gateway** drop-down and click **Save changes**.
-4. Go to **WooCommerce > Settings > Manual Payment > Stripe**.
-5. Copy and paste your **Secret key** or **Restricted key** (from step 1) into the **Secret Key** field.
-6. Copy and paste your **Publishable key** (from step 1) into the **Publishable Key** field.
-7. Click **Save changes**. That's it, you're all set.
+1. Go [here](https://dashboard.stripe.com/settings/integration) and switch on **Enable card data collection**.
+2. Get your live API keys [here](https://dashboard.stripe.com/apikeys), or your test keys [here](https://dashboard.stripe.com/test/apikeys).
+3. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
+4. Select **Stripe** from the **Payment Gateway** drop-down and click **Save changes**.
+5. Go to **WooCommerce > Settings > Manual Payment > Stripe**.
+6. Copy and paste your **Secret key** or **Restricted key** (from step 2) into the **Secret Key** field.
+7. Copy and paste your **Publishable key** (from step 2) into the **Publishable Key** field.
+8. Click **Save changes**. That's it, you're all set.
 
 #### Authorize.net
 
@@ -113,6 +114,12 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 7. Edit Order Screen
 
 == Changelog ==
+
+= 2.8.6 =
+
+* Declare support for WordPress 6.8.
+* Update the Stripe API version.
+* Update the Eway SDK.
 
 = 2.8.5 =
 
