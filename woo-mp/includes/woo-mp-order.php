@@ -70,9 +70,9 @@ class Woo_MP_Order {
     }
 
     /**
-     * Get manual payments.
+     * Get backend payments.
      *
-     * @return array All manual payments.
+     * @return array All backend payments.
      */
     public function get_woo_mp_payments() {
         $payments = json_decode(
@@ -90,7 +90,7 @@ class Woo_MP_Order {
     }
 
     /**
-     * Add a manual payment.
+     * Add a backend payment.
      *
      * @param array $payment Associative array of the following format:
      *

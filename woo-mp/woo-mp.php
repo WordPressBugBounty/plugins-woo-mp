@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Plugin Name: WooCommerce Manual Payment
+ * Plugin Name: Backend Payments for WooCommerce
  * Description: Process payments from the WooCommerce Edit Order screen.
- * Version: 2.8.6
+ * Version: 2.8.9
  * Author: bfl
  * Text Domain: woo-mp
  * WC requires at least: 3.3
- * WC tested up to: 9
+ * WC tested up to: 10
  */
 
 defined( 'ABSPATH' ) || die;
@@ -32,7 +32,7 @@ if ( ! $woo_mp_should_load ) {
     return;
 }
 
-define( 'WOO_MP_VERSION', '2.8.6' );
+define( 'WOO_MP_VERSION', '2.8.9' );
 define( 'WOO_MP_PRO_COMPAT_VERSION', 9 );
 define( 'WOO_MP_PATH', dirname( __FILE__ ) );
 define( 'WOO_MP_URL', plugins_url( '', __FILE__ ) );

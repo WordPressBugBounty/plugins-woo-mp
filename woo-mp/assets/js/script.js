@@ -21,6 +21,8 @@ jQuery(function($) {
 
         $('#post, #order').on('change', ':input:not(#woo-mp *)', warnOrderChangesUnsaved);
 
+        addHasScrollbarClass();
+
         $('#woo-mp [data-open-panel]').on('click', openPanel);
         $('#woo-mp [data-close-panel]').on('click', closePanel);
 
@@ -81,6 +83,14 @@ jQuery(function($) {
             null,
             true
         );
+    }
+
+    function addHasScrollbarClass() {
+        var $table = $('#woo-mp-main .payments-table');
+
+        if ($table[0] && $table[0].scrollHeight !== $table[0].clientHeight) {
+            $table.addClass('has-scrollbar');
+        }
     }
 
     function openPanel() {

@@ -1,11 +1,11 @@
-=== WooCommerce Manual Payment ===
+=== Backend Payments for WooCommerce ===
 
 Contributors: bfl
 Tags: backend, manual, phone, payment, woocommerce
 Requires at least: 4.7
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 2.8.5
+Stable tag: 2.8.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,9 +56,9 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 
 1. Go [here](https://dashboard.stripe.com/settings/integration) and switch on **Enable card data collection**.
 2. Get your live API keys [here](https://dashboard.stripe.com/apikeys), or your test keys [here](https://dashboard.stripe.com/test/apikeys).
-3. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
+3. From your WordPress dashboard, go to **WooCommerce > Settings > Backend Payments**.
 4. Select **Stripe** from the **Payment Gateway** drop-down and click **Save changes**.
-5. Go to **WooCommerce > Settings > Manual Payment > Stripe**.
+5. Go to **WooCommerce > Settings > Backend Payments > Stripe**.
 6. Copy and paste your **Secret key** or **Restricted key** (from step 2) into the **Secret Key** field.
 7. Copy and paste your **Publishable key** (from step 2) into the **Publishable Key** field.
 8. Click **Save changes**. That's it, you're all set.
@@ -80,9 +80,9 @@ To get started, you'll want to select a payment gateway and enter some API keys.
             1. Log in to the Authorize.net [Merchant Interface](https://sandbox.authorize.net/).
             2. Visit [this page](https://sandbox.authorize.net/UI/themes/sandbox/User/ClientKey.aspx).
     2. If you already have a **Public Client Key** on the page, you can skip this step. In the **Create New Public Client Key** section, click **Submit** and verify your identity.
-3. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
+3. From your WordPress dashboard, go to **WooCommerce > Settings > Backend Payments**.
 4. Select **Authorize.net** from the **Payment Gateway** drop-down and click **Save changes**.
-5. Go to **WooCommerce > Settings > Manual Payment > Authorize.net**.
+5. Go to **WooCommerce > Settings > Backend Payments > Authorize.net**.
 6. Copy and paste your **API Login ID** (from step 1) into the **Login ID** field.
 7. Copy and paste your **Transaction Key** (from step 1) into the **Transaction Key** field.
 8. Copy and paste your **Public Client Key** (from step 2) into the **Client Key** field.
@@ -96,9 +96,9 @@ To get started, you'll want to select a payment gateway and enter some API keys.
         2. Here you can find your API keys.
     * If you do not already use an Eway payment gateway:
         1. [Follow these instructions](https://go.eway.io/s/article/How-do-I-setup-my-Live-eWAY-API-Key-and-Password).
-2. From your WordPress dashboard, go to **WooCommerce > Settings > Manual Payment**.
+2. From your WordPress dashboard, go to **WooCommerce > Settings > Backend Payments**.
 3. Select **Eway** from the **Payment Gateway** drop-down and click **Save changes**.
-4. Go to **WooCommerce > Settings > Manual Payment > Eway**.
+4. Go to **WooCommerce > Settings > Backend Payments > Eway**.
 5. Copy and paste your **API Key** (from step 1) into the **API Key** field.
 6. Copy and paste your **API Password** (from step 1) into the **API Password** field.
 7. Click **Save changes**. That's it, you're all set.
@@ -114,6 +114,20 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 7. Edit Order Screen
 
 == Changelog ==
+
+= 2.8.9 =
+
+* Declare support for WordPress 6.9.
+* Update the Stripe API version.
+
+= 2.8.8 =
+
+* Fix broken "Add new order" screen.
+
+= 2.8.7 =
+
+* Rename plugin.
+* Declare support for WooCommerce 10.x.
 
 = 2.8.6 =
 

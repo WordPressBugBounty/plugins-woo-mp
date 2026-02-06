@@ -32,7 +32,7 @@ class Woo_MP {
         define( 'WOO_MP_PAYMENT_PROCESSOR', str_replace( '_', '-', get_option( 'woo_mp_payment_processor' ) ) );
         define( 'WOO_MP_CONFIG_HELP', 'If you need help, you can find instructions <a href="https://wordpress.org/plugins/woo-mp/#installation" target="_blank">here</a>.' );
         define( 'WOO_MP_SETTINGS_URL', admin_url( 'admin.php?page=wc-settings&tab=manual_payment' ) );
-        define( 'WOO_MP_UPGRADE_URL', 'https://www.woo-mp.com/#section-pricing' );
+        define( 'WOO_MP_UPGRADE_URL', '' );
     }
 
     /**
@@ -73,7 +73,7 @@ class Woo_MP {
             AdminNotice::create( 'woo_mp_welcome' )
                 ->persistentlyDismissible()
                 ->info( html_entity_decode( wp_kses_post( sprintf(
-                    'To get started with WooCommerce Manual Payment, ' .
+                    'To get started with Backend Payments for WooCommerce, ' .
                     '<a href="%s">select a payment gateway</a> and fill out your API keys.' .
                     " Once that's done, you'll be able to process payments directly from the " .
                     '<strong>Payments</strong> section at the bottom of the <strong>Edit&nbsp;order</strong> screen. %s',
@@ -91,7 +91,7 @@ class Woo_MP {
      * @return array        The updated action links.
      */
     public function add_action_links( $links ) {
-        if ( ! self::is_pro() ) {
+        if ( ! self::is_pro() && WOO_MP_UPGRADE_URL ) {
             array_unshift( $links, sprintf( '<a href="%s" target="_blank">Upgrade</a>', WOO_MP_UPGRADE_URL ) );
         }
 
@@ -130,7 +130,7 @@ class Woo_MP {
     }
 
     /**
-     * Check whether WooCommerce Manual Payment Pro Extension is installed and active.
+     * Check whether Backend Payments for WooCommerce Pro Extension is installed and active.
      *
      * @return bool Whether Pro is available.
      */

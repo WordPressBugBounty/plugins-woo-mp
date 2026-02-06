@@ -5,7 +5,7 @@ namespace Woo_MP;
 defined( 'ABSPATH' ) || die;
 
 /**
- * Manual Payment settings.
+ * Backend Payments settings.
  *
  * This class extends `WC_Settings_Page`. Therefore, care must be taken to
  * ensure that this class is only loaded when `WC_Settings_Page` is loaded.
@@ -35,7 +35,7 @@ class Settings_Page extends \WC_Settings_Page {
 
     public function __construct() {
         $this->id    = self::ID;
-        $this->label = __( 'Manual Payment', 'woo-mp' );
+        $this->label = __( 'Backend Payments', 'woo-mp' );
 
         $this->payment_gateways = Payment_Gateways::get_all();
 
@@ -68,7 +68,7 @@ class Settings_Page extends \WC_Settings_Page {
                 ],
                 [
                     'title'             => __( 'Payment Gateway', 'woo-mp' ),
-                    'desc'              => __( 'This payment gateway will be used for all manual payments.', 'woo-mp' ),
+                    'desc'              => __( 'This payment gateway will be used for all backend payments.', 'woo-mp' ),
                     'id'                => 'woo_mp_payment_processor',
                     'type'              => 'select',
                     'class'             => 'wc-enhanced-select',

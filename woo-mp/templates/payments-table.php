@@ -1,6 +1,6 @@
 <?php if ( $this->charges ) : ?>
 
-    <div class="payments-table <?= count( $this->charges ) > 3 ? 'has-scrollbar' : '' ?>">
+    <div class="payments-table">
         <table class="widefat striped">
             <thead>
                 <tr>
@@ -18,7 +18,7 @@
 
                             <div class="row-actions">
 
-                                <?php if ( apply_filters( 'woo_mp_charge_is_refundable', true, $charge ) ) : ?>
+                                <?php if ( ( Woo_MP\Woo_MP::is_pro() || WOO_MP_UPGRADE_URL ) && apply_filters( 'woo_mp_charge_is_refundable', true, $charge ) ) : ?>
 
                                     <button type="button" class="button-link" data-open-panel="refund" data-charge-id="<?= esc_attr( $charge['id'] ) ?>">Refund</button>
 

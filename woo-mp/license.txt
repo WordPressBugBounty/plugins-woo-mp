@@ -1,4 +1,4 @@
-WooCommerce Manual Payment - Process payments from the WooCommerce Edit Order screen.
+Backend Payments for WooCommerce - Process payments from the WooCommerce Edit Order screen.
 
 Copyright (C) 2017 Mendy Block
 

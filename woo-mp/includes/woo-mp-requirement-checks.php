@@ -84,7 +84,7 @@ class Woo_MP_Requirement_Checks {
     private static function check_php_version() {
         if ( version_compare( PHP_VERSION, self::PHP_MIN_REQUIRED, '<' ) ) {
             self::$message = sprintf(
-                'WooCommerce Manual Payment requires PHP version %s or above. You have version %s.' .
+                'Backend Payments for WooCommerce requires PHP version %s or above. You have version %s.' .
                 ' Please contact your website administrator, web developer,' .
                 ' or hosting provider to get your server updated.',
                 self::PHP_MIN_REQUIRED,
@@ -101,7 +101,7 @@ class Woo_MP_Requirement_Checks {
     private static function check_wordpress_version() {
         if ( version_compare( $GLOBALS['wp_version'], self::WORDPRESS_MIN_REQUIRED, '<' ) ) {
             self::$message = sprintf(
-                'WooCommerce Manual Payment requires WordPress version %s or above. You have version %s.' .
+                'Backend Payments for WooCommerce requires WordPress version %s or above. You have version %s.' .
                 ' Please contact your website administrator, web developer,' .
                 ' or hosting provider to get your website updated.',
                 self::WORDPRESS_MIN_REQUIRED,
@@ -122,7 +122,7 @@ class Woo_MP_Requirement_Checks {
         );
 
         if ( ! in_array( 'woocommerce/woocommerce.php', $active_plugins, true ) ) {
-            self::$message = 'WooCommerce Manual Payment requires WooCommerce to be installed and active.';
+            self::$message = 'Backend Payments for WooCommerce requires WooCommerce to be installed and active.';
         }
     }
 
@@ -134,7 +134,7 @@ class Woo_MP_Requirement_Checks {
     private static function check_woocommerce_version() {
         if ( version_compare( get_option( 'woocommerce_version' ), self::WOOCOMMERCE_MIN_REQUIRED, '<' ) ) {
             self::$message = sprintf(
-                'WooCommerce Manual Payment requires WooCommerce version %s or above. You have version %s.',
+                'Backend Payments for WooCommerce requires WooCommerce version %s or above. You have version %s.',
                 self::WOOCOMMERCE_MIN_REQUIRED,
                 get_option( 'woocommerce_version' )
             );
@@ -170,7 +170,7 @@ class Woo_MP_Requirement_Checks {
 
         if ( version_compare( $current_data_version, $latest_compatible_data_version, '>' ) ) {
             self::$message = sprintf(
-                'You have downgraded to an incompatible version of WooCommerce Manual Payment.' .
+                'You have downgraded to an incompatible version of Backend Payments for WooCommerce.' .
                 ' Version %s or above is required. You have version %s.',
                 $current_data_version,
                 WOO_MP_VERSION
