@@ -21,21 +21,30 @@
 #woo-mp .notice {
     position: relative;
     margin: 0px 0px 19px 0px !important;
+    padding: 1px 12px;
 }
 
-@media (max-width: 782px) {
-    #woo-mp .notice {
-        padding: 5px 16px;
-    }
+#woo-mp .wp-gte-7-0 .notice {
+    border-top: 1px solid #c3c4c7;
+    border-right: 1px solid #c3c4c7;
+    border-bottom: 1px solid #c3c4c7;
+}
 
-    #woo-mp .notice.is-dismissible {
-        padding-right: 46px;
-    }
+#woo-mp .notice.is-dismissible {
+    padding-right: 38px;
+}
+
+#woo-mp .notice p {
+    padding: 2px;
 }
 
 #woo-mp .notice-dismiss {
-    right: 0;
     z-index: 1;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 9px;
 }
 
 #woo-mp .notice-main {
@@ -57,7 +66,7 @@
     z-index: 1;
     margin: -2px -13px -2px 0;
     border-radius: 0;
-    padding: 9px 12px;
+    padding: calc(0.5em + 3px) 12px;
     line-height: 20px;
 }
 
@@ -67,13 +76,6 @@
 
 #woo-mp .is-dismissible .details-button {
     margin-right: 0;
-}
-
-@media (max-width: 782px) {
-    #woo-mp .details-button {
-        margin: -6px -17px -6px 0;
-        padding: 13px 16px;
-    }
 }
 
 #woo-mp .notice-details {
@@ -90,12 +92,6 @@
     width: 100%;
     border-top: 1px solid #c3c4c7;
     content: "";
-}
-
-@media (max-width: 782px) {
-    #woo-mp .notice-details-border {
-        padding: 5px 0 6px 0;
-    }
 }
 
 #woo-mp .notice-card {
@@ -153,7 +149,7 @@
 #woo-mp-main .collapse-arrow:after {
     display: inline-block;
     width: 20px;
-    height: 19px;
+    height: 20px;
     text-decoration: inherit;
     font: normal 20px/1 dashicons;
     font-weight: 400;
@@ -298,9 +294,9 @@
     display: none;
     max-width: 50%;
     margin-left: -50%;
-    padding: 0 8px;
+    padding: 0 12px;
     border: 1px solid transparent;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 2px 2px 0;
     outline: none;
     background-color: transparent;
     overflow: hidden;
@@ -316,14 +312,13 @@
 }
 
 #woo-mp-main .charge-amount-autofill-btn:focus {
-    border-color: #2271b1;
-    box-shadow: 0 0 0 1px #2271b1;
+    border-color: var(--wp-admin-theme-color);
+    box-shadow: 0 0 0 var(--wp-admin-border-width-focus, 1.5px) var(--wp-admin-theme-color);
     outline: 2px solid transparent;
 }
 
 @media (max-width: 782px) {
     #woo-mp-main .charge-amount-autofill-btn {
-        padding: 3px 10px;
         font-size: 14px;
     }
 }
@@ -333,18 +328,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    height: 40px;
     margin-bottom: 0;
     border: 1px solid #8c8f94;
-    border-radius: 4px;
-    padding: 0 8px;
+    border-radius: 2px;
+    padding: 0 12px;
     font-size: 14px;
 }
 
 @media (max-width: 782px) {
     #woo-mp-main .checkbox-label {
-        height: 40px;
-        padding: 3px 10px;
         font-size: 16px;
     }
 

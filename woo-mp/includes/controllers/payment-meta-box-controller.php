@@ -193,6 +193,10 @@ class Payment_Meta_Box_Controller {
 
         wp_enqueue_style( 'woo-mp-style', WOO_MP_URL . '/assets/css/style.css', [], WOO_MP_VERSION );
 
+        if ( version_compare( $GLOBALS['wp_version'], '7.0-beta1', '<' ) ) {
+            wp_enqueue_style( 'woo-mp-style-7-0', WOO_MP_URL . '/assets/css/wp-backward-compatibility/style-7-0.css', [], WOO_MP_VERSION );
+        }
+
         if ( version_compare( $GLOBALS['wp_version'], '5.7-beta1', '<' ) ) {
             wp_enqueue_style( 'woo-mp-style-5-7', WOO_MP_URL . '/assets/css/wp-backward-compatibility/style-5-7.css', [], WOO_MP_VERSION );
         }

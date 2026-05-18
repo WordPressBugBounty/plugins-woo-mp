@@ -1,6 +1,6 @@
 <?php defined( 'ABSPATH' ) || die; ?>
 
-<div id="woo-mp-main">
+<div id="woo-mp-main" class="<?= version_compare( $GLOBALS['wp_version'], '7.0-beta1', '>=' ) ? 'wp-gte-7-0' : '' ?>">
 
     <div class="global-notice" hidden></div>
 

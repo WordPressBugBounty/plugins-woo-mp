@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Backend Payments for WooCommerce
  * Description: Process payments from the WooCommerce Edit Order screen.
- * Version: 2.8.9
+ * Version: 2.8.10
  * Author: bfl
  * Text Domain: woo-mp
  * WC requires at least: 3.3
@@ -32,7 +32,7 @@ if ( ! $woo_mp_should_load ) {
     return;
 }
 
-define( 'WOO_MP_VERSION', '2.8.9' );
+define( 'WOO_MP_VERSION', '2.8.10' );
 define( 'WOO_MP_PRO_COMPAT_VERSION', 9 );
 define( 'WOO_MP_PATH', dirname( __FILE__ ) );
 define( 'WOO_MP_URL', plugins_url( '', __FILE__ ) );

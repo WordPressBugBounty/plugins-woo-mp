@@ -1,0 +1,28 @@
+#woo-mp-main .charge-amount-autofill-btn {
+    border-radius: 0 4px 4px 0;
+    padding: 0 8px;
+}
+
+#woo-mp-main .charge-amount-autofill-btn:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+@media (max-width: 782px) {
+    #woo-mp-main .charge-amount-autofill-btn {
+        padding: 3px 10px;
+    }
+}
+
+#woo-mp-main .checkbox-label {
+    height: 30px;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+
+@media (max-width: 782px) {
+    #woo-mp-main .checkbox-label {
+        height: 40px;
+        padding: 3px 10px;
+    }
+}

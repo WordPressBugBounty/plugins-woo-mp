@@ -3,9 +3,9 @@
 Contributors: bfl
 Tags: backend, manual, phone, payment, woocommerce
 Requires at least: 4.7
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 2.8.8
+Stable tag: 2.8.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,10 @@ To get started, you'll want to select a payment gateway and enter some API keys.
 7. Edit Order Screen
 
 == Changelog ==
+
+= 2.8.10 =
+
+* Declare support for WordPress 7.0.
 
 = 2.8.9 =
 
